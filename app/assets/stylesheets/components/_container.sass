@@ -1,0 +1,20 @@
+.container
+  +clearfix
+  padding-left: $base-padding
+  padding-right: $base-padding
+  margin-left: auto
+  margin-right: auto
+
+.container--narrow
+  max-width: 80em
+
+.main-content
+  background: red
+  +breakpoint($medium)
+    flex: 1
+    margin-right: 1em
+
+.sidebar
+  background: blue
+  +breakpoint($medium)
+    flex: 0 1 300px
